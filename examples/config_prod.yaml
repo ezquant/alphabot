@@ -1,0 +1,18 @@
+"coinbase":
+  "url": "https://api.pro.coinbase.com"
+  "websocket-feed": "wss://ws-feed-public.sandbox.pro.coinbase.com"
+  "accounts":
+    "btc": "25fc4fbb-8d7f-42f5-b7c0-d826d0e1ed3f"
+    "ltc": "e6f22960-1ddc-4f00-a095-8ed435456176"
+    "eth": "6090e7d3-5e9a-4f58-9619-4b4e146fdf50"
+    "usd": "e6a8d351-027e-487f-94e7-985a9a075090"
+
+  "passphrase": "um4d252jwv"
+  "secret_key": "B4HztmlR0n4b1S3M5sVV2wsE1QMp1YFFnG2Ou9AN8cHQMP7sXJirkC8jEt1XtjvUlTSnrS+Xq5Jx2y8EItBIRQ=="
+  "access_key": "c7402d99a78b03721e79e66300247286"
+
+"db":
+  "mongodb":
+    "host": "localhost"
+    "port": 27017
+    "database": "algotrader"

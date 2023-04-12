@@ -1,0 +1,50 @@
+"settings":
+  #"strategy_file": "backtrader/sample.py"  # user strategy file, must located in user_strategies
+  #"strategy_file": "backtrader/simple.py"
+  #"strategy_file": "joinquant/etf_28_lundong.py"
+  #"strategy_file": "joinquant/live_pairs_fund_good.py"
+  "strategy_file": "joinquant/21_01_全时组合.py"
+  "strategy_params": ""  # kwargs in key=value format
+  "timeframe": "1m"  # 'timeframe type, e.g., 1d, 1m
+  "storage": "mongodb"  # 策略中获取历史数据的数据源：mongodb[QA]/sqlite/csv
+  "storage_params": ""  # kwargs in key=value format
+  "fromdate": "2021-07-01T00:00:00"  # Date[time] in YYYY-MM-DD[THH:MM:SS] format
+  "todate": "2021-08-01T23:59:59"  # Date[time] in YYYY-MM-DD[THH:MM:SS] format
+  "exchange": "thx"  # Exchange check orders, e.g., thx, tdx, ib, oanda, coinbase
+  # 如果使用 vnpy 作为后端引擎，数据源等相关设定仍位于 vt_settings.json 中
+  "engine": "vnpy"  # 所用第三方量化交易引擎: vnpy, backtrader, rqalpha, zipline
+  "run_type": "backtest"  # 运行模式：backtest, sim_trade, live_trade
+  "cash_start": 1000000
+
+"backtrader":  # config for backtrader
+  "broker": ""
+  "cerebro": ""
+  "sizer": ""
+  "plot": ""
+
+"coinbase":
+  "url": "https://api-public.sandbox.pro.coinbase.com"
+  "websocket-feed": "wss://ws-feed-public.sandbox.pro.coinbase.com"
+  "accounts":
+    "btc": "25fc4fbb-8d7f-42f5-b7c0-d826d0e1ed3f"
+    "ltc": "e6f22960-1ddc-4f00-a095-8ed435456176"
+    "eth": "6090e7d3-5e9a-4f58-9619-4b4e146fdf50"
+    "usd": "e6a8d351-027e-487f-94e7-985a9a075090"
+  "passphrase": "bf4zovy42ca"
+  "secret_key": "K+0gUKEBKTZ0SWIqq3PxVjCjvf+HTPAnnffW/aCDtlbYxKDBKM2Mec8Apfr3oxrV4x6urdvoXye5oBJuC/6XOA=="
+  "access_key": "309832aa37a7698c9e1e63fd4322a094"
+
+"aws":
+  "s3":
+    "bucket": "algo-trading-config-bucket"
+    "key": "dev/config.json"
+  "sqs":
+    "queue-name": "algo_trading_test_queue.fifo"
+    "max_number_of_messages": 10
+    "wait_time_seconds": 5
+
+"db":
+  "mongodb":
+    "host": "localhost"
+    "port": 27017
+    "database": "quantaxis"
