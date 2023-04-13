@@ -1,9 +1,8 @@
 "settings":
   #"strategy_file": "backtrader/sample.py"  # user strategy file, must located in user_strategies
   #"strategy_file": "backtrader/simple.py"
-  #"strategy_file": "joinquant/etf_28_lundong.py"
+  "strategy_file": "joinquant/etf_28_lundong.py"
   #"strategy_file": "joinquant/live_pairs_fund_good.py"
-  "strategy_file": "joinquant/21_01_全时组合.py"
   "strategy_params": ""  # kwargs in key=value format
   "timeframe": "1m"  # 'timeframe type, e.g., 1d, 1m
   "storage": "mongodb"  # 策略中获取历史数据的数据源：mongodb[QA]/sqlite/csv
@@ -12,7 +11,7 @@
   "todate": "2021-08-01T23:59:59"  # Date[time] in YYYY-MM-DD[THH:MM:SS] format
   "exchange": "thx"  # Exchange check orders, e.g., thx, tdx, ib, oanda, coinbase
   # 如果使用 vnpy 作为后端引擎，数据源等相关设定仍位于 vt_settings.json 中
-  "engine": "vnpy"  # 所用第三方量化交易引擎: vnpy, backtrader, rqalpha, zipline
+  "engine": "backtrader"  # 所用第三方量化交易引擎: vnpy, backtrader, rqalpha, zipline
   "run_type": "backtest"  # 运行模式：backtest, sim_trade, live_trade
   "cash_start": 1000000
 

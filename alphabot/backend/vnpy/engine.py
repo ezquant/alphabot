@@ -6,7 +6,7 @@ import datetime as dt
 #from pytz import timezone
 
 #from backtrader.utils import date2num, num2date
-from vnpy.app.portfolio_strategy import BacktestingEngine
+from vnpy_portfoliostrategy import BacktestingEngine
 from vnpy.trader.constant import Exchange, Interval, Direction, Offset
 from vnpy.trader.object import BarData, TickData
 from earnmi.data.import_tradeday_from_jqdata import TRAY_DAY_VT_SIMBOL

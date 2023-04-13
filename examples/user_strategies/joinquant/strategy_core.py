@@ -4211,13 +4211,9 @@ class TraderShipane(TraderBase):
                 # 可选参数包括：host, port, client 等，请将下面的 IP 替换为实际 IP
                 # !!! 实盘易账号密码当前为明文，尽量避免使用
                 self.s = web_api_client.JoinQuantExecutor(
-                    # host='qcloudgz.visnusoft.com',  # qcloud gz
-                    #host='123.207.127.16',  # qcloud gz
-                    host='botsh.vedasky.cn',  # qcloud sh
-                    #host='49.234.61.83',  # qcloud sh
-                    #host='127.0.0.1',  # localhost
+                    host='127.0.0.1',  # localhost
                     port=8888 if self.server_type == 'shipane' else 8889,
-                    key='Jdd1008@hk',
+                    key='xxxxyyyyzzzz',
                     client='title:monijiaoyi',
                     crypto=False if self.server_type == 'shipane' else True
                 )

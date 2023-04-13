@@ -12,5 +12,5 @@ sdist:
 	python setup.py sdist
 
 test:
-	nosetests tests
+	nosetests alphabot
 
